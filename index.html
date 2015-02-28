@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title></title>
+</head>
+
+<style>
+    .axis {
+      font: 8px sans-serif;
+      padding:13px 15px;
+    }
+    .y.axis text{
+
+    }
+    .y.axis{
+      font: 8px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: black;
+      height:5px;
+      stroke:black;
+      stroke-width:; 1;
+    }
+   /* .axis text {
+      padding: 10px;
+    }*/
+    .brush .extent {
+      stroke: #D4D8DC;
+      fill-opacity: .50;
+      shape-rendering: crispEdges;
+    }
+    .brush{
+      background-color: #D4D8DC
+    }
+    .overview .bars .bar{
+      background-color: #D4D8DC
+    }
+    #mainContainer {
+      width:1340px;
+      height:auto;
+      /*text-align: center;*/
+      margin-right:auto;
+      margin-left:auto;
+
+    }
+    #toggleContainer{
+      width:1340;
+      height:auto;
+      margin-right:auto;
+      margin-top:40px;
+      margin-left:auto;
+    }
+    #outerContainer{
+      width: auto;
+      height: auto;
+      border: 1px solid black;
+    }
+    #outerContainer .overview{
+      margin-left: 50px;
+    }
+    .x.axis{
+      font-size: 12px;
+    }
+    #yearHeader{
+
+      font-size: 20px
+    }
+    #monthHeader{
+      font-size: 20px;      
+    }
+/*    .tick{
+      padding: 20px;
+      color: blue;
+    }*/
+    .main.x.axis path{
+      display:none;
+
+    }
+
+    .tick text{
+      background-color:blue;
+    }
+ /*   line #biggerBorder{
+      border: solid 3px red;
+      height:10px;
+
+
+    }*/
+/*    .x.axis line {
+      stroke: #fff;
+    }
+    .x.axis .minor {
+      stroke-opacity: .5;
+    }*/
+
+    .main .x.axis path {
+
+      fill: none;
+      stroke: #D4D8DC;
+    }
+    .line1{ 
+      fill:none;
+      stroke: #F4D4BB;
+      stroke-width: 4px;
+    }
+    .line2{
+      fill:none;
+      stroke: #F7C8C8;
+      stroke-width: 4px;
+    }
+    .line3{
+      fill:none;
+      stroke: #D0DFF4;
+      stroke-width: 4px;
+    }
+    .line4{
+      fill:none;
+      stroke: #C6F9D6;
+      stroke-width: 4px;
+    }
+
+    ["#C6F9D6", "#C6D6DD", "#F7C8C8", "#D0DFF4"]
+
+/*    .x.axis path{
+      padding: 10px
+    }
+*/
+</style>
+<body>
+<div id="outerContainer">
+  <div id="mainContainer"></div>
+  <div id="toggleContainer"></div>
+</div>
+
+<!-- <form onsubmit="changeGraphs()">
+  <input type="radio" id="bar" name="graph" value="bar" checked>bar
+<br>
+  <input type="radio" id="line" name="graph" value="line">line
+  <input type="submit">
+</form> -->
+
+
+
+
+<!-- <svg class="chart"></svg> -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="main.js"></script>
+</body>
+</html>
